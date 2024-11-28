@@ -6,10 +6,8 @@ from mfa import send_mfa_code, verify_mfa_code
 from audit_log import log_event
 
 app = Flask(__name__)
-app.secret_key = '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'
-
-
-@app.route('/', methods=['GET', 'POST'])
+app.secret_key = ''
+('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
