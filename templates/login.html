@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IAM Automation Tool - Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4c8bf5, #6fb1fc);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h2 {
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #4c8bf5;
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 50px;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        .btn-custom {
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-size: 18px;
+            background-color: #4c8bf5;
+            color: white;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #6fb1fc;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #4c8bf5;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: #6fb1fc;
+        }
+
+        .login-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-footer a {
+            color: #4c8bf5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Welcome Back</h2>
+
+        <form method="POST" action="/login">
+            <div class="form-group">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username"
+                    required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password"
+                    required>
+            </div>
+
+            <button type="submit" class="btn btn-custom">Login</button>
+
+            <div class="social-buttons">
+                <span>or login with</span>
+                <br>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

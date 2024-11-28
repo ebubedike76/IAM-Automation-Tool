@@ -1,0 +1,8 @@
+Flask
+ldap3
+pyotp
+sqlalchemy
+flask-wtf
+jinja2
+bcrypt
+requests

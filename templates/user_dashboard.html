@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the IAM Dashboard</h1>
+    <p>User: {{ user }}</p>
+    <h2>Onboarding Status: {{ user['onboarded'] }}</h2>
+    <h2>Access Level: {{ user['access_level'] }}</h2>
+
+    <p>
+        <a href="/certify_access/{{ user }}">Generate Access Certification</a><br>
+        <a href="/logs/{{ user }}">View Activity Logs</a>
+    </p>
+</body>
+</html>
+
